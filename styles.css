@@ -1,9 +1,48 @@
 ul {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   list-style-type: none;
+  text-transform: capitalize;
+  margin: .25em;
+}
+
+img {
+  height: 15em;
+}
+
+.name {
+  border-bottom: 1px solid #45cb06;
+  padding: .25em;
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.email {
   padding: 1em;
-  margin: 1em;
+  color: #c2bfc3;
+  text-transform: uppercase;
+  font-size: .8em;
+}
+
+.ssn {
+  padding: 1em;
+  color: #45cb06;
+  font-size: .75em;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  margin: 1em 1em .25em 1em;
 }

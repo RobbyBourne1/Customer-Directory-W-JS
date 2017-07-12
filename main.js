@@ -8,9 +8,11 @@ customers.results.forEach((customer, index) => {
   img.src = customer.picture.large
 
   const name = document.createElement('h2')
+  name.classList.add('name')
   name.textContent = `${customer.name.first} ${customer.name.last}`
 
   const email = document.createElement('p')
+  email.classList.add('email')
   email.textContent = `${customer.email}`
 
   const address = document.createElement('address')
@@ -25,6 +27,7 @@ customers.results.forEach((customer, index) => {
   phNum.textContent = `${customer.phone}`
 
   const ssn = document.createElement('p')
+  ssn.classList.add('ssn')
   ssn.textContent = `${customer.id.value}`
 
   li.appendChild(img)

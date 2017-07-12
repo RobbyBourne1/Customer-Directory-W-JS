@@ -27,8 +27,20 @@ customers.results.forEach((customer, index) => {
   phNum.textContent = `${customer.phone}`
 
   const ssn = document.createElement('p')
-  ssn.classList.add('ssn')
+  ssn.classList.add('ssn', 'no-blur')
   ssn.textContent = `${customer.id.value}`
+
+  ssn.addEventListener('mouseover', function() {
+    if (ssn.className != 'no-blur') {
+      ssn.className = 'no-blur'
+    }
+  })
+
+  ssn.addEventListener('mouseout', function() {
+    if (ssn.className != 'ssn') {
+      ssn.className = 'ssn'
+    }
+  })
 
   li.appendChild(img)
   li.appendChild(name)

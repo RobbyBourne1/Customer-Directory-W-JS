@@ -33,9 +33,17 @@ p {
   font-size: .8em;
 }
 
+.no-blur {
+  color: #45cb06;
+  text-shadow: none;
+  padding: 1em;
+  font-size: .75em;
+}
+
 .ssn {
   padding: 1em;
-  color: #45cb06;
+  color: transparent;
+  text-shadow: 0 0 5px rgba(63, 169, 121, 0.8);
   font-size: .75em;
 }
 
